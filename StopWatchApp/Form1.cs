@@ -36,6 +36,19 @@ namespace StopWatchApp
             timer.Start();
         }
 
+        private void pauseButton_Click(object sender, EventArgs e)
+        {
+            stopwatch.Stop();
+            timer.Stop();
+        }
+
+
+        private void resumeButton_Click(object sender, EventArgs e)
+        {
+            stopwatch.Start();
+            timer.Start();
+        }
+
 
         private void timertick(object sender, EventArgs e)
         {
