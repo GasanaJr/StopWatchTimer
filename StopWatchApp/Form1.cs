@@ -36,6 +36,22 @@ namespace StopWatchApp
             timer.Start();
         }
 
+        private void stopButton_Click(object sender, EventArgs e)
+        {
+            stopwatch.Stop();
+            timer.Stop();
+            MessageBox.Show("The Stopwatch Value is: " +label2.Text);
+            stopwatch.Reset();
+            label2.Text = "00:00:00";
+        }
+
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+            stopwatch.Reset();
+            label2.Text = "00:00:00";
+
+        }
+
         private void pauseButton_Click(object sender, EventArgs e)
         {
             stopwatch.Stop();
